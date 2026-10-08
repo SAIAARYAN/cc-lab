@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+<defs>
+  <linearGradient id="p" x1="0" x2="1"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#4f46e5"/></linearGradient>
+  <linearGradient id="v" x1="0" x2="1"><stop stop-color="#0891b2"/><stop offset="1" stop-color="#0e7490"/></linearGradient>
+  <filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-opacity=".16"/></filter>
+</defs>
+<rect width="1400" height="720" rx="30" fill="#f8fafc"/>
+<text x="700" y="58" text-anchor="middle" font-family="Arial" font-size="32" font-weight="700" fill="#0f172a">Type-1 vs Type-2 Virtualization</text>
+<text x="700" y="92" text-anchor="middle" font-family="Arial" font-size="17" fill="#64748b">Same Ubuntu workload • Same sysbench CPU benchmark • Different virtualization layers</text>
+
+<rect x="70" y="135" width="600" height="510" rx="25" fill="white" stroke="#ddd6fe" stroke-width="3" filter="url(#s)"/>
+<rect x="730" y="135" width="600" height="510" rx="25" fill="white" stroke="#a5f3fc" stroke-width="3" filter="url(#s)"/>
+<rect x="70" y="135" width="600" height="78" rx="25" fill="url(#p)"/>
+<rect x="730" y="135" width="600" height="78" rx="25" fill="url(#v)"/>
+<text x="370" y="183" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="white">PART A • TYPE-1</text>
+<text x="1030" y="183" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="white">PART B • TYPE-2</text>
+
+<g font-family="Arial" text-anchor="middle">
+<rect x="160" y="250" width="420" height="70" rx="15" fill="#eef2ff"/>
+<text x="370" y="293" font-size="21" font-weight="700" fill="#312e81">Physical Hardware</text>
+<rect x="160" y="345" width="420" height="70" rx="15" fill="#ede9fe"/>
+<text x="370" y="388" font-size="21" font-weight="700" fill="#4c1d95">Proxmox VE</text>
+<rect x="160" y="440" width="420" height="70" rx="15" fill="#ddd6fe"/>
+<text x="370" y="483" font-size="21" font-weight="700" fill="#4c1d95">Ubuntu Virtual Machine</text>
+<rect x="160" y="535" width="420" height="70" rx="15" fill="#c4b5fd"/>
+<text x="370" y="578" font-size="21" font-weight="700" fill="#312e81">sysbench CPU</text>
+
+<rect x="820" y="250" width="420" height="70" rx="15" fill="#ecfeff"/>
+<text x="1030" y="293" font-size="21" font-weight="700" fill="#155e75">Physical Hardware</text>
+<rect x="820" y="345" width="420" height="70" rx="15" fill="#cffafe"/>
+<text x="1030" y="388" font-size="21" font-weight="700" fill="#155e75">Host Operating System</text>
+<rect x="820" y="440" width="420" height="70" rx="15" fill="#a5f3fc"/>
+<text x="1030" y="483" font-size="21" font-weight="700" fill="#164e63">VMware Workstation</text>
+<rect x="820" y="535" width="420" height="70" rx="15" fill="#67e8f9"/>
+<text x="1030" y="578" font-size="21" font-weight="700" fill="#164e63">Ubuntu VM → sysbench</text>
+</g>
+
+<g stroke="#475569" stroke-width="4" fill="none">
+<path d="M370 320 V345"/><path d="M370 415 V440"/><path d="M370 510 V535"/>
+<path d="M1030 320 V345"/><path d="M1030 415 V440"/><path d="M1030 510 V535"/>
+</g>
+</svg>
